@@ -7,22 +7,18 @@ var stateNotRequired = true;
 </script>
 <script type="text/javascript" src="{$BASE_PATH_JS}/StatesDropdown.js"></script>
 
-<div class="alert alert-block alert-info">
-    <form class="form-horizontal" role="form" method="post" action="{$smarty.server.PHP_SELF}?action=contacts">
-        <div class="row">
-            <label for="inputContactId" class="col-sm-3 control-label">{$LANG.clientareachoosecontact}</label>
-            <div class="col-sm-6">
-                <select name="contactid" id="inputContactId" onchange="submit()" class="form-control">
-                    {foreach item=contact from=$contacts}
-                        <option value="{$contact.id}">{$contact.name} - {$contact.email}</option>
-                    {/foreach}
-                    <option value="new" selected="selected">{$LANG.clientareanavaddcontact}</option>
-                </select>
-            </div>
-            <div class="col-sm-2 hidden-xs">
-                <button type="submit" class="btn btn-default btn-block">{$LANG.go}</button>
-            </div>
+<div class="alert alert-block alert-info text-center">
+    <form class="form-inline" role="form" method="post" action="{$smarty.server.PHP_SELF}?action=contacts">
+        <div class="form-group">
+            <label for="inputContactID">{$LANG.clientareachoosecontact}</label>
+            <select name="contactid" id="inputContactID" onchange="submit()" class="form-control">
+                {foreach item=contact from=$contacts}
+                    <option value="{$contact.id}">{$contact.name} - {$contact.email}</option>
+                {/foreach}
+                <option value="new" selected="selected">{$LANG.clientareanavaddcontact}</option>
+            </select>
         </div>
+        <button type="submit" class="btn btn-default">{$LANG.go}</button>
     </form>
 </div>
 
@@ -104,7 +100,7 @@ var stateNotRequired = true;
 
         <div class="form-group">
             <label class="full control-label">{$LANG.subaccountpermissions}</label>
-            <div class="checkbox clearfix" id="contactPermissions">
+            <div class="checkbox clearfix">
                 {foreach $allPermissions as $permission}
                     <div class="col-sm-6">
                         <label>
@@ -115,13 +111,6 @@ var stateNotRequired = true;
                         </label>
                     </div>
                 {/foreach}
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <button type="button" class="btn btn-sm btn-check-all" data-checkbox-container="contactPermissions" data-btn-check-toggle="1" id="btnSelectAll-contactPermissions" data-label-text-select="{lang key='checkAll'}" data-label-text-deselect="{lang key='uncheckAll'}">
-                        {lang key='checkAll'}
-                    </button>
-                </div>
             </div>
         </div>
         <fieldset class="form-horizontal">
@@ -147,7 +136,7 @@ var stateNotRequired = true;
     </div>
 
     <div class="form-group">
-        <h3>{$LANG.clientareacontactsemails}</h3>
+        <label class="control-label">{$LANG.clientareacontactsemails}</label>
         <div class="controls checkbox">
             <label>
                 <input type="checkbox" name="generalemails" id="generalemails" value="1"{if $generalemails} checked{/if} />

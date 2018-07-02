@@ -39,7 +39,7 @@
                     <td>{$invoice.invoicenum}</td>
                     <td><span class="hidden">{$invoice.normalisedDateCreated}</span>{$invoice.datecreated}</td>
                     <td><span class="hidden">{$invoice.normalisedDateDue}</span>{$invoice.datedue}</td>
-                    <td data-order="{$invoice.totalnum}">{$invoice.total}</td>
+                    <td>{$invoice.total}</td>
                     <td><span class="label status status-{$invoice.statusClass}">{$invoice.status}</span></td>
                     <td class="responsive-edit-button" style="display: none;">
                         <a href="viewinvoice.php?id={$invoice.id}" class="btn btn-block btn-info">
@@ -51,6 +51,6 @@
         </tbody>
     </table>
     <div class="text-center" id="tableLoading">
-        <p><i class="fas fa-spinner fa-spin"></i> {$LANG.loading}</p>
+        <p><i class="fa fa-spinner fa-spin"></i> {$LANG.loading}</p>
     </div>
 </div>

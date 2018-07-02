@@ -6,3 +6,117 @@
     defined here.
 
 ***************************************************** */
+
+
+.client-home-panels .panel > .panel-heading {
+    background-color: #111111;
+    color:#fff;
+    border-bottom: 0;
+    font-weight: bold;
+}
+
+.sidebar .panel-default>.panel-heading{color:#fff;background-color:#111111;border-color:#111111}
+.panel-default>.panel-heading{color:#fff;background-color:#111111;border-color:#111111}
+.panel-title h3 {color:#fff;}
+
+
+
+table.table-list thead th {
+    background-color: #111111;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+    font-size: 13px;
+}
+
+.navbar-main {
+    margin-bottom: 0;
+    background-color: #00a9d4;
+    border: 0;
+    min-height: 38px;
+    font-size: 15px;
+}
+
+.navbar-main .navbar-nav > li > a:hover,
+.navbar-main .navbar-nav > li > a:focus,
+.navbar-main .navbar-nav > .active > a,
+.navbar-main .navbar-nav > .active > a:hover,
+.navbar-main .navbar-nav > .active > a:focus,
+.navbar-main .navbar-nav > .open > a,
+.navbar-main .navbar-nav > .open > a:hover,
+.navbar-main .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #111111;
+}
+.navbar-main .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    text-decoration: none;
+    color: #fff;
+    background-color: #111111;
+}
+
+.client-home-panels .panel-title h3 {color:#111111}
+
+.language-popover .popover-content li a {
+    color: #fff;
+}
+
+
+section#header {
+
+    background: transparent;
+}
+
+
+.home-shortcuts {
+  margin: 0;
+  background: #00a9d4;
+  color: #fff;
+}
+section#home-banner {
+    background-color: #111111;
+    color: #fff;
+}
+
+
+#home-banner h2 {
+	color:#fff;
+}
+
+
+.dataTables_wrapper .dataTables_info {
+    background-color: #00a9d4;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
+    background-color: #00a9d4;
+}
+ 
+.breadcrumb {
+	background-color: transparent;
+margin-left:0px;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    color: white;
+    background-color: #00a9d4;
+    border-color: #00a9d4;
+}
+
+h2 {
+	font-size:20px;
+}
+
+.container {font-size:15px;}
+
+div.header-lined h1 {
+border-bottom:0px solid #111111;
+color: #000;
+}
+#main-body{
+ 
+    width: 100% !important;
+    padding: 0px !important;
+
+}
+
